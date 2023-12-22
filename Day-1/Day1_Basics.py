@@ -664,3 +664,105 @@ while(i < len(numbers)):
 
 print("Sum of negative numbers in the list:", sum_negative)
 
+# Building a Simple Calculator
+
+# Example 1: Using for loop
+# Python program to build a simple calculator using if statement
+
+# define functions
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    else:
+        return x / y
+
+def main():
+    print("Simple Calculator")
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            operation = input("Enter operation (+, -, *, /) or 'q' to quit: ")
+
+            if operation == 'q':
+                break
+
+            if operation == '+':
+                result = add(num1, num2)
+            elif operation == '-':
+                result = subtract(num1, num2)
+            elif operation == '*':
+                result = multiply(num1, num2)
+            elif operation == '/':
+                result = divide(num1, num2)
+            else:
+                print("Invalid operation. Please choose +, -, *, or /")
+                continue
+
+            print("Result:", result)
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+if __name__ == "__main__":
+    main()
+
+# Example 2: Using while loop
+# Python program to build a simple calculator using if statement
+    
+# define functions
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+        if y == 0:
+            return "Error! Division by zero."
+        else:
+            return x / y
+        
+def main():
+
+    print("Simple Calculator")
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            operation = input("Enter operation (+, -, *, /) or 'q' to quit: ")
+
+            if operation == 'q':
+                break
+
+            if operation == '+':
+                result = add(num1, num2)
+            elif operation == '-':
+                result = subtract(num1, num2)
+            elif operation == '*':
+                result = multiply(num1, num2)
+            elif operation == '/':
+                result = divide(num1, num2)
+            else:
+                print("Invalid operation. Please choose +, -, *, or /")
+                continue
+
+            print("Result:", result)
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+if __name__ == "__main__":
+    main()
+
+    
