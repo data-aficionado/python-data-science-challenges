@@ -58,28 +58,10 @@ print(list)
 
 # Lists can be sorted
 # Example:  
-# Renamed list variable to avoid conflict with the built-in list type
-mixed_list = [1, 2, 3, 4, 5, 'a', 'b', 'c', 'd', 'e', [1, 2, 3, 4, 5]]
-
-# Separate the list into sublists of comparable types
-integers = [item for item in mixed_list if isinstance(item, int)]
-strings = [item for item in mixed_list if isinstance(item, str)]
-# Now 'list' refers to the built-in type, not a variable
-sublists = [item for item in mixed_list if isinstance(item, list)]
-
-# Sort the sublists
-integers.sort()
-strings.sort()
-# Sort each sublist
-sublists = [sorted(sublist) for sublist in sublists]
-
-# Combine the sublists back into one list if needed
-sorted_mixed_list = integers + strings + sublists
-
-print(sorted_mixed_list)
-
-
-# output = [[1, 2, 3, 4, 5, 'a', 'b', 'c', 'd', 'e', [1, 2, 3, 4, 5]]
+list = [1, 2, 3, 4, 5, 'a', 'b', 'c', 'd', 'e', [1, 2, 3, 4, 5]]
+list.sort()
+print(list)
+# output = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 'a', 'b', 'c', 'd', 'e']
 
 # Lists can be reversed
 # Example: 
